@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background: #f8f8f8;
+}
+
+#info {
+  font-size: 22px;
+  color: #ccc;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 1s forwards 3s;
+}
+
+#info > div {
+  margin-top: -10em;
+}
+
+#info > div > div {
+  margin-bottom: 0.4em;
+}
+
+code {
+  color: #bbb;
+  background: rgba(0, 0, 0, 0.07);
+  padding: 0em 0.2em;
+}
+
+#github {
+  position: absolute;
+  top: 1em;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 13em;
+  text-align: center;
+  text-decoration: none;
+  color: #9999EE;
+  font-size: 18px;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1
+  }
+  to {
+    opacity: 0.4
+  }
+}
